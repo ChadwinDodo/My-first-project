@@ -66,7 +66,7 @@ header nav ul li a:hover{
 }
 
 header nav .nav-icon{
-    width: 7.5;
+    width: 7.5%;
     text-align: center;
     font-size: 16px;
 }
@@ -347,20 +347,20 @@ header nav .nav-icon{
     width: 100%;
 }
 
-#products .container{
+#products .products-container {
     display: block;
     width: 80%;
     margin: 0 auto;
     font-size: 0;
 }
 
-#products .container .products-header{
+#products .products-container .products-header {
     font-size: 16px;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-#products .container .products-header h2{
+#products .products-container .products-header h2{
     padding: 2rem 1rem;
     text-transform: uppercase;
     font-family: "Franklin Gothic Medium";
@@ -372,7 +372,7 @@ header nav .nav-icon{
     text-align: center;
 }
 
-#products .container .products-header p{
+#products .products-container .products-header p{
     font-family: Cambria;
     color: rgba(89, 89, 89, 1);
     font-size: 1rem;
@@ -381,7 +381,7 @@ header nav .nav-icon{
     text-align: center;
 }
 
-#products .container .product{
+#products .products-container .product{
     width: 25%;
     display: inline-block;
     font-size: 16px;
@@ -392,7 +392,7 @@ header nav .nav-icon{
     opacity: 1;
 }
 
-#products .container .product:hover {
+#products .products-container .product:hover {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     opacity: 0.8;
@@ -405,12 +405,12 @@ header nav .nav-icon{
     cursor: pointer;
 }
 
-#products .container .product figure img{
+#products .products-container .product figure img{
     width: 100%;
     height: auto;
 }
 
-#products .container .product figure figcaption{
+#products .products-container .product figure figcaption{
     font-family: "Franklin Gothic Medium";
     color: rgba(89, 89, 89, 1);
     font-size: 0.8rem;
@@ -421,15 +421,22 @@ header nav .nav-icon{
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1024px) {
+	#products .container .product {
+		width: 50%;
+		padding: 3rem;
+	}
+}
+
 @media only screen and (max-width: 768px){
-    #products .container .product{
+    #products .products-container .product{
         width: 50%;
         padding: 2rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    #products .container .product {
+    #products .products-container .product {
         width: 100%;
     }
 }
